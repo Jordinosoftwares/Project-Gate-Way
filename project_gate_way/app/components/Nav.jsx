@@ -19,7 +19,7 @@ const Nav = () => {
         <ul className="flex gap-5 uppercase transition-all">
           <li>
             <Link
-              href="/"
+              href="/Home"
               className="
            transition-all hover:text-[#DA7B7B] letter_spacing"
             >
@@ -27,13 +27,16 @@ const Nav = () => {
             </Link>
           </li>
           <li>
-            <Link href="#about" className="hover:text-[#DA7B7B] letter_spacing">
+            <Link
+              href="/Home#about"
+              className="hover:text-[#DA7B7B] letter_spacing"
+            >
               About
             </Link>
           </li>
           <li>
             <Link
-              href="#services"
+              href="/Home#services"
               className="hover:text-[#DA7B7B] letter_spacing"
             >
               Services
@@ -41,7 +44,7 @@ const Nav = () => {
           </li>
           <li>
             <Link
-              href="#contactus"
+              href="/Home#contactus"
               className="hover:text-[#DA7B7B] letter_spacing"
             >
               Contact Us
@@ -51,7 +54,7 @@ const Nav = () => {
 
         <div className="flex gap-5">
           <button className="blue_background hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded">
-            <Link href="/">Create Account</Link>
+            <Link href="/create-account">Create Account</Link>
           </button>
           <button className="blue_background hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded">
             <Link href="/">Login</Link>
@@ -89,13 +92,16 @@ const Nav = () => {
           >
             <ul className="flex flex-col gap-5 uppercase">
               <li>
-                <Link href="/" className="hover:text-[#DA7B7B] letter_spacing">
+                <Link
+                  href="/Home"
+                  className="hover:text-[#DA7B7B] letter_spacing"
+                >
                   Home
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#about"
+                  href="/Home#about"
                   className="hover:text-[#DA7B7B] letter_spacing"
                 >
                   About
@@ -103,7 +109,7 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  href="#services"
+                  href="/Home#services"
                   className="hover:text-[#DA7B7B] letter_spacing letter_spacing"
                 >
                   Services
@@ -111,10 +117,24 @@ const Nav = () => {
               </li>
               <li>
                 <Link
-                  href="#contactus"
+                  href="/Home#contactus"
                   className="hover:text-[#DA7B7B] letter_spacing"
                 >
                   Contact Us
+                </Link>
+              </li>
+
+              <li>
+                <Link
+                  href="/create-account"
+                  className="hover:text-[#DA7B7B] letter_spacing"
+                >
+                  Create Account
+                </Link>
+              </li>
+              <li>
+                <Link href="/" className="hover:text-[#DA7B7B] letter_spacing">
+                  Login
                 </Link>
               </li>
             </ul>

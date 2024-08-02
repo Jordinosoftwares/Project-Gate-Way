@@ -7,7 +7,7 @@ export const metadata = {
   description: "Get your projects done",
 };
 
-const layout = ({ children }) => {
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body>
@@ -21,4 +21,4 @@ const layout = ({ children }) => {
   );
 };
 
-export default layout;
+export default RootLayout;

@@ -1,21 +1,11 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Hero from "./components/Hero";
-import Services from "./components/Services";
-import Statistics from "./components/Statistics";
-import Testimonial from "./components/Testimonial";
+import HomePage from "./Home/page";
 
-const page = () => {
+const Home = () => {
   return (
     <section>
-      <Hero />
-      <About />
-      <Statistics />
-      <Services />
-      <Testimonial />
-      <Contact />
+      <HomePage />
     </section>
   );
 };
 
-export default page;
+export default Home;
