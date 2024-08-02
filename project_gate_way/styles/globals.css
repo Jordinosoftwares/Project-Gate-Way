@@ -1,0 +1,83 @@
+/* @import url("https: //fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"); */
+/* @import url("https: //unpkg.com/aos@next/dist/aos.css"); */
+/* @import url("https: //unpkg.com/aos@next/dist/aos.js"); */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0;   
+}
+
+@font-face {
+    font-family: MyCustomFont;
+    src: url('../public/fonts/Inter-VariableFont_opsz\,wght.ttf') format('truetype');
+}
+
+body {
+    font-family: MyCustomFont, sans-serif;
+}
+
+
+.hero_img{
+    background-image: url('../public/images/bg-img.jpg');
+}
+
+.stats_img{
+    background-image: url('../public/images/stats-img.jpg');
+}
+
+.test_img {
+    background-image: url('../public/images/test-img.jpg');
+}
+
+.blue_color{
+    color: #2457C5;
+}
+
+.orange_color{
+    color: #DA7B7B;
+}
+
+.blue_background{
+    background-color: #2457C5;
+}
+
+.orange_background{
+    background-color: #DA7B7B;
+}
+
+.list_tick {
+    list-style-image: url('../public/images/tick.svg');
+    padding-left: 3rem;
+}
+
+.transform {
+    transform: translateY(-70%);
+}
+
+.border_css{
+    border:2px solid green;
+}
+
+.letter_spacing{
+    transition: all 1s ease;
+}
+
+.letter_spacing:hover{
+ letter-spacing: 2px;   
+}
+
+.opacity_transition{
+    background-color: aquamarine;
+}
+
+button{
+    transition: all 0.5s ease;
+}
+
+button:hover{
+    scale: 1.2;
+}
