@@ -10,8 +10,10 @@ const Hero = () => {
             <span className="orange_color">gateway</span>
           </p>
 
-          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-1 px-20 rounded-2xl">
-            <Link href="#">Read More</Link>
+          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-4 px-20 rounded-2xl">
+            <Link href="#" className="uppercase">
+              Read More
+            </Link>
           </button>
         </div>
       </div>

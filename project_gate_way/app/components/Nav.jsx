@@ -47,17 +47,33 @@ const Nav = () => {
               href="/Home#contactus"
               className="hover:text-[#DA7B7B] letter_spacing"
             >
-              Contact Us
+              Contact Us{" "}
             </Link>
           </li>
         </ul>
 
         <div className="flex gap-5">
-          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded">
-            <Link href="/create-account">Create Account</Link>
+          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl">
+            <Link href="/create-account" className="flex gap-1 items-center">
+              Create Account
+              <Image
+                src="/images/arrow-right.svg"
+                width={20}
+                height={20}
+                alt="arrow-img"
+              />
+            </Link>
           </button>
-          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded">
-            <Link href="/">Login</Link>
+          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl">
+            <Link href="/login" className="flex gap-1 items-center">
+              Login{" "}
+              <Image
+                src="/images/arrow-right.svg"
+                width={20}
+                height={20}
+                alt="arrow-img"
+              />
+            </Link>
           </button>
         </div>
       </div>
@@ -133,7 +149,10 @@ const Nav = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/" className="hover:text-[#DA7B7B] letter_spacing">
+                <Link
+                  href="/login"
+                  className="hover:text-[#DA7B7B] letter_spacing"
+                >
                   Login
                 </Link>
               </li>

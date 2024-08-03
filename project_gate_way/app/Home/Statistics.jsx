@@ -58,7 +58,7 @@ const Statistics = () => {
     <section>
       <section className="relative h-[70vh]">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat stats_img">
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black text-white  bg-opacity-70">
+          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black text-white  bg-opacity-70 px-4">
             <p className="text-center ">
               <span className="font-semibold sm:text-5xl text-3xl">
                 What we have achieved so far
