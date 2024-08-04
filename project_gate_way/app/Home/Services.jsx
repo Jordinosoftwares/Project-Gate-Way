@@ -5,7 +5,7 @@ import ServicesBox from "./ServicesBox";
 
 const Services = () => {
   return (
-    <section className="py-32 px-10" id="services">
+    <section className="py-32 px-10" id="services" data-aos="zoom-in-down">
       <div className="">
         <p className="text-center text-[#2457C5] blur-sm text-7xl  uppercase">
           Services

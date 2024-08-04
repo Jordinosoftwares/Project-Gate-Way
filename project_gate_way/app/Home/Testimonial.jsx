@@ -65,7 +65,7 @@ const Testimonial = () => {
   };
 
   return (
-    <section className="relative sm:h-screen h-[50vh] my-32">
+    <section className="relative sm:h-screen h-[50vh] my-32" data-aos="zoom-in">
       <div className="absolute inset-0 bg-cover bg-center bg-no-repeat test_img">
         <div className="absolute inset-0 flex flex-col items-center justify-center gap-5  bg-black text-white  bg-opacity-70">
           <div className=" sm:w-1/2 h-full flex sm:items-center justify-center">

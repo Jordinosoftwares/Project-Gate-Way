@@ -7,12 +7,17 @@ const Nav = () => {
   const [showmenu, setShowMenu] = useState(false);
   return (
     <nav className="w-full flex items-center justify-between py-4 px-10 bg-[#FDFDFD] fixed z-10">
-      <Link href="/" className="text-center font-bold">
-        <span className="blue_color text-xl uppercase">p</span>
-        <span className="orange_color text-xl uppercase">g</span>
-        <br />
-        <spnan className="blue_color uppercase">project</spnan>{" "}
-        <span className="orange_color uppercase">gateway</span>
+      <Link href="/" className="text-center font-bold flex items-center">
+        <Image
+          src="/images/projectgatewaylogo.png"
+          width={100}
+          height={100}
+          alt="projectgatewaylogo"
+        />
+        <p className="sm:block hidden">
+          <spnan className="blue_color uppercase">project</spnan>{" "}
+          <span className="orange_color uppercase">gateway</span>
+        </p>
       </Link>
       {/* Desktop Navigation */}
       <div className="md:flex items-center justify-between max-w-70 gap-20 font-semibold hidden">
@@ -53,8 +58,8 @@ const Nav = () => {
         </ul>
 
         <div className="flex gap-5">
-          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl">
-            <Link href="/create-account" className="flex gap-1 items-center">
+          <Link href="/create-account" className="">
+            <button className="blue_background hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl flex gap-1 items-center">
               Create Account
               <Image
                 src="/images/arrow-right.svg"
@@ -62,10 +67,10 @@ const Nav = () => {
                 height={20}
                 alt="arrow-img"
               />
-            </Link>
-          </button>
-          <button className="blue_background hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl">
-            <Link href="/login" className="flex gap-1 items-center">
+            </button>
+          </Link>
+          <Link href="/login" className="">
+            <button className="blue_background hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-xl flex gap-1 items-center">
               Login{" "}
               <Image
                 src="/images/arrow-right.svg"
@@ -73,8 +78,8 @@ const Nav = () => {
                 height={20}
                 alt="arrow-img"
               />
-            </Link>
-          </button>
+            </button>
+          </Link>
         </div>
       </div>
       {/* Mobile Navigation */}
@@ -111,6 +116,9 @@ const Nav = () => {
                 <Link
                   href="/Home"
                   className="hover:text-[#DA7B7B] letter_spacing"
+                  onClick={() => {
+                    setShowMenu((prev) => !prev);
+                  }}
                 >
                   Home
                 </Link>
@@ -119,6 +127,9 @@ const Nav = () => {
                 <Link
                   href="/Home#about"
                   className="hover:text-[#DA7B7B] letter_spacing"
+                  onClick={() => {
+                    setShowMenu((prev) => !prev);
+                  }}
                 >
                   About
                 </Link>
@@ -127,6 +138,9 @@ const Nav = () => {
                 <Link
                   href="/Home#services"
                   className="hover:text-[#DA7B7B] letter_spacing letter_spacing"
+                  onClick={() => {
+                    setShowMenu((prev) => !prev);
+                  }}
                 >
                   Services
                 </Link>
@@ -135,6 +149,9 @@ const Nav = () => {
                 <Link
                   href="/Home#contactus"
                   className="hover:text-[#DA7B7B] letter_spacing"
+                  onClick={() => {
+                    setShowMenu((prev) => !prev);
+                  }}
                 >
                   Contact Us
                 </Link>
@@ -144,6 +161,9 @@ const Nav = () => {
                 <Link
                   href="/create-account"
                   className="hover:text-[#DA7B7B] letter_spacing"
+                  onClick={() => {
+                    setShowMenu((prev) => !prev);
+                  }}
                 >
                   Create Account
                 </Link>
@@ -152,6 +172,9 @@ const Nav = () => {
                 <Link
                   href="/login"
                   className="hover:text-[#DA7B7B] letter_spacing"
+                  onClick={() => {
+                    setShowMenu((prev) => !prev);
+                  }}
                 >
                   Login
                 </Link>

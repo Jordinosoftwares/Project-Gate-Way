@@ -19,29 +19,32 @@ const About = () => {
         id=""
       >
         <div
-          className="flex flex-col justify-evenly h-80"
-          data-aos="zoom-in-up"
+          className="flex flex-col justify-evenly h-80 sm:mb-0 mb-5"
+          data-aos="fade-right"
         >
-          <h2 className="flex gap-2 items-center blue_color text-2xl font-bold uppercase">
+          <h2 className="flex items-center blue_color text-2xl font-bold uppercase">
             <Image
+              className="mr-2"
               src="/images/info.svg"
               width={40}
               height={40}
               alt="info-img"
             />
-            about us
+            a<span className="border-b border-[#797272] mr-2">bout</span> us
           </h2>
-          <p>
-            This product is sponsored by TECHRITOMA INC. TECHRITOMA stands for
-            Technology for Recovery Investments,Taking Operative Actions for
-            Massive Avail. TECHRITOMA Inc is a multipurpose technology based
-            company with head office in Buea Cameroon and Nairobi Kenya.
-          </p>
+          <span className="sm:border-r sm:border-[#797272] sm:pr-10">
+            <p>
+              This product is sponsored by TECHRITOMA INC. TECHRITOMA stands for
+              Technology for Recovery Investments,Taking Operative Actions for
+              Massive Avail. TECHRITOMA Inc is a multipurpose technology based
+              company with head office in Buea Cameroon and Nairobi Kenya.
+            </p>
+          </span>
 
           <p className="flex gap-5 font-bold">
             For more inforation
             <button className="blue_background hover:bg-blue-700 text-white font-semibold py-1 px-4 rounded">
-              <Link href="#" className="flex gap-1 items-center uppercase">
+              <Link href="#" className="flex gap-1 items-center">
                 Visit{" "}
                 <Image
                   src="/images/arrow-right.svg"
@@ -53,7 +56,10 @@ const About = () => {
             </button>
           </p>
         </div>
-        <div className="flex flex-col justify-evenly h-80">
+        <div
+          className="flex flex-col justify-evenly h-80 sm:pl-5 sm:mb-0 mb-20"
+          data-aos="fade-left"
+        >
           <h2 className="blue_color font-bold">Why you should choose us</h2>
           <p className="">
             With the ever growing competition we set to offer an

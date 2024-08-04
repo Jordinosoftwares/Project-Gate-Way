@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Contact = () => {
   return (
-    <section className="py-32 px-10" id="contactus">
+    <section className="py-32 sm:px-10" id="contactus" data-aos="fade-down">
       <div className="">
         <p className="text-center text-[#2457C5] blur-sm text-7xl  uppercase">
           Contact Us
@@ -17,8 +17,8 @@ const Contact = () => {
         Our support team is Available 24/7 in 365. Speed is our passion
       </p>
 
-      <form className="flex flex-col gap-20 shadow-sm shadow-slate-500 rounded-xl overflow-hidden">
-        <div className="w-full flex sm:flex-row flex-col sm:gap-0 gap-5 sm:text-justify text-center items-center justify-evenly bg-[#FEFBFB] py-10">
+      <form className="flex flex-col gap-20 sm:w-1/2 w:full mx-auto shadow-sm shadow-slate-500 rounded-xl overflow-hidden">
+        <div className="w-full flex sm:flex-row flex-col sm:items-baseline items-center sm:gap-0 gap-5 sm:text-justify text-center justify-evenly bg-[#FEFBFB] py-10">
           <div className="sm:text-justify text-center">
             <h2 className="flex gap-1 text-center mb-2 font-bold text-2xl">
               <Image
@@ -68,26 +68,26 @@ const Contact = () => {
               type="text"
               required
               className="border border-solid border-[#585555] p-3 rounded-lg w-1/2 text-[#585555]"
-              value="Enter name:"
+              placeholder="Enter name:"
             />
             <input
               type="email"
               required
               className="border border-solid border-[#585555] p-3 rounded-lg w-1/2 text-[#585555]"
-              value="Enter email:"
+              placeholder="Enter email:"
             />
           </div>
           <input
             type="text"
             required
             className="border border-solid border-[#585555] p-3 rounded-lg text-[#585555]"
-            value="Enter phone number:"
+            placeholder="Enter phone number:"
           />
           <input
             type="text"
             required
             className="border border-solid border-[#585555] p-3 rounded-lg text-[#585555]"
-            value="Subject:"
+            placeholder="Subject:"
           />
 
           <textarea
@@ -95,11 +95,11 @@ const Contact = () => {
             rows="10"
             required
             className="border border-solid border-[#585555] p-3 rounded-lg text-[#585555]"
-            value="Message:"
+            placeholder="Message:"
           ></textarea>
           <button
             typpe="submit"
-            className="flex blue_background hover:bg-blue-700 text-white font-bold py-2 px-14 mx-auto rounded-2xl w-56 uppercase"
+            className="flex blue_background hover:bg-blue-700 text-white font-bold py-2 px-14 mx-auto rounded-2xl"
           >
             Contact Us
           </button>

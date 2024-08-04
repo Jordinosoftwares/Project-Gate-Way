@@ -55,63 +55,66 @@ const Statistics = () => {
     animate();
   };
   return (
-    <section>
-      <section className="relative h-[70vh]">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat stats_img">
-          <div className="absolute inset-0 flex flex-col items-center justify-center bg-black text-white  bg-opacity-70 px-4">
-            <p className="text-center ">
-              <span className="font-semibold sm:text-5xl text-3xl">
-                What we have achieved so far
-              </span>
-              <br />
-              <span className="sm:text-3xl text-2xl">
-                We are still looking ahead as there are better days ahead.
-              </span>
-            </p>
+    <section className="relative h-[70vh]">
+      <div className="absolute inset-0 bg-cover bg-center bg-no-repeat stats_img">
+        <div className="absolute inset-0 flex flex-col items-center justify-center bg-black text-white  bg-opacity-70 px-4">
+          <p className="text-center" data-aos="fade-up">
+            <span className="font-semibold sm:text-5xl text-3xl">
+              What we have achieved so far
+            </span>
+            <br />
+            <span className="sm:text-3xl text-2xl">
+              We are still looking ahead as there are better days ahead.
+            </span>
+          </p>
 
-            <section id="statistics" ref={sectionRef} className="w-full">
-              <div className="flex flex-wrap items-baseline justify-evenly  my-10">
-                <div className="text-center sm:w-fit w-28">
-                  <p
-                    ref={(el) => (countUpRefs.current[0] = el)}
-                    className="text-4xl font-bold count-up orange_color"
-                  >
-                    00
-                  </p>
-                  <h2 className="sm:text-3xl text-1xl">Client</h2>
-                </div>
-                <div className="text-center  sm:w-fit w-28">
-                  <p
-                    ref={(el) => (countUpRefs.current[1] = el)}
-                    className="text-4xl font-bold count-up orange_color"
-                  >
-                    00
-                  </p>
-                  <h2 className="sm:text-3xl text-1xl">Project</h2>
-                </div>
-                <div className="text-center  sm:w-fit w-28">
-                  <p
-                    ref={(el) => (countUpRefs.current[2] = el)}
-                    className="text-4xl font-bold count-up orange_color"
-                  >
-                    00
-                  </p>
-                  <h2 className="sm:text-3xl text-1xl">Hours of Support</h2>
-                </div>
-                <div className="text-center  sm:w-fit w-28">
-                  <p
-                    ref={(el) => (countUpRefs.current[3] = el)}
-                    className="text-4xl font-bold count-up orange_color"
-                  >
-                    00
-                  </p>
-                  <h2 className="sm:text-3xl text-1xl">Hard Workers</h2>
-                </div>
+          <section
+            id="statistics"
+            ref={sectionRef}
+            className="w-full"
+            data-aos="fade-up"
+          >
+            <div className="flex flex-wrap items-baseline justify-evenly  my-10">
+              <div className="text-center sm:w-fit w-28">
+                <p
+                  ref={(el) => (countUpRefs.current[0] = el)}
+                  className="text-4xl font-bold count-up orange_color sm:mt-0 mt-5"
+                >
+                  00
+                </p>
+                <h2 className="sm:text-3xl text-1xl">Client</h2>
               </div>
-            </section>
-          </div>
+              <div className="text-center  sm:w-fit w-28">
+                <p
+                  ref={(el) => (countUpRefs.current[1] = el)}
+                  className="text-4xl font-bold count-up orange_color sm:mt-0 mt-5"
+                >
+                  00
+                </p>
+                <h2 className="sm:text-3xl text-1xl">Project</h2>
+              </div>
+              <div className="text-center  sm:w-fit w-28">
+                <p
+                  ref={(el) => (countUpRefs.current[2] = el)}
+                  className="text-4xl font-bold count-up orange_color sm:mt-0 mt-5"
+                >
+                  00
+                </p>
+                <h2 className="sm:text-3xl text-1xl">Hours of Support</h2>
+              </div>
+              <div className="text-center  sm:w-fit w-28">
+                <p
+                  ref={(el) => (countUpRefs.current[3] = el)}
+                  className="text-4xl font-bold count-up orange_color sm:mt-0 mt-5"
+                >
+                  00
+                </p>
+                <h2 className="sm:text-3xl text-1xl">Hard Workers</h2>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </section>
   );
 };

@@ -7,7 +7,7 @@ import Testimonial from "./Testimonial";
 
 const HomePage = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <Hero />
       <About />
       <Statistics />
