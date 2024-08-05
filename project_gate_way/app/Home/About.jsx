@@ -62,7 +62,8 @@ const About = () => {
         >
           <h2 className="blue_color font-bold">Why you should choose us</h2>
           <p className="">
-            With the ever growing competition we set to offer an
+            With the ever growing competition we set to offer the following
+            services
           </p>
           <ul className="list_tick">
             <li>
